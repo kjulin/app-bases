@@ -1,0 +1,43 @@
+{
+  "name": "react-timeline",
+  "version": "0.1.0",
+  "description": "",
+  "main": "js/app.js",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "moment": "^2.10.6",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
+    "browserify": "^11.1.0",
+    "envify": "^3.4.0",
+    "uglify-js": "^2.4.24",
+    "watchify": "^3.4.0"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d js/app.js",
+    "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > js/bundle.min.js"
+  },
+  "author": "QOCO Systems Oy",
+  "license": "UNLICENSED",
+  "private": "true",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ],
+      "envify"
+    ]
+  }
+}
