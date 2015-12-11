@@ -9,4 +9,4 @@ const App = React.createClass({
     }
 })
 
-render(<App />, document.getElementById("timeline"))
+render(<App />, document.getElementById("app"))

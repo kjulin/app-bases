@@ -1,5 +1,5 @@
 {
-  "name": "react-timeline",
+  "name": "react-es6",
   "version": "0.1.0",
   "description": "",
   "main": "js/app.js",
@@ -23,8 +23,8 @@
     "start": "watchify -o js/bundle.js -v -d js/app.js",
     "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > js/bundle.min.js"
   },
-  "author": "QOCO Systems Oy",
-  "license": "UNLICENSED",
+  "author": "Klaus Julin",
+  "license": "MIT",
   "private": "true",
   "browserify": {
     "transform": [
