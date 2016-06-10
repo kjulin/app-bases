@@ -11,7 +11,7 @@ grunt.initConfig({
    },
    lambda_deploy: {
       default: {
-         arn: 'copy your funtion arn here'
+         arn: 'copy your function arn here'
       },
       options: {
         enableVersioning: true,
