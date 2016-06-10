@@ -1,0 +1,16 @@
+{
+  "name": "aws-lambda-base",
+  "version": "1.0.0",
+  "description": "Skeleton for AWS Lambda function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "2.3.17",
+    "grunt": "1.0.1",
+    "grunt-aws-lambda": "0.13.0"
+  }
+}

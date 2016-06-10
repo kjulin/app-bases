@@ -1,0 +1,5 @@
+{
+  "body": "HTTP request body",
+  "path": "HTTP request path",
+  "query": "HTTP request query"
+}
